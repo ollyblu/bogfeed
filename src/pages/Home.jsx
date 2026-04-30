@@ -362,7 +362,8 @@ export default function Home() {
             {/* ================================================================
                 GANTI: Logo / ikon untuk banner CTA (opsional)
                 ================================================================ */}
-            <span className="cta-icon">🌿</span>
+            {/* <span className="cta-icon">🌿</span> */}
+            <img className='cta-logo' src='./logo.png' />
             <h2>Siap Meningkatkan Kualitas Ternak Domba Anda?</h2>
             <p>
               Hubungi kami sekarang dan dapatkan konsultasi gratis seputar kebutuhan pakan domba Anda

@@ -577,6 +577,8 @@
 .cta-content {
   position: relative;
   z-index: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .cta-icon {
@@ -584,6 +586,16 @@
   display: block;
   margin-bottom: 24px;
   animation: pulse 3s ease-in-out infinite;
+}
+
+.cta-logo{
+  animation: pulse 3s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: 100px;
 }
 
 @keyframes pulse {
