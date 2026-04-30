@@ -36,7 +36,7 @@ export default function Navbar() {
               Contoh: <img src="/images/logo.png" alt="BogFeed" width="140" />
               ============================================================ */}
           <div className="logo-placeholder">
-            <img src="../src/assets/logo.png" alt="BogFeed" width="50" />
+            <img src="./logo.png" alt="BogFeed" width="50" />
             {/* <span className="logo-icon">🌿</span> */}
             <span className="logo-text">
               Bog<span>Feed</span>

@@ -21,7 +21,7 @@ export default function Footer() {
             <div className="footer-brand">
               <Link to="/" className="footer-logo">
                 {/* <span className="logo-icon">🌿</span> */}
-                <img src="../src/assets/logo.png" alt="BogFeed" width="50" />
+                <img src="./logo.png" alt="BogFeed" width="50" />
                 <span className="logo-text">
                   Bog<span>Feed</span>
                 </span>
