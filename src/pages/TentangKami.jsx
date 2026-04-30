@@ -26,6 +26,7 @@ const legalities = [
     desc: 'BogFeed terdaftar secara resmi dengan Nomor Induk Berusaha, menjamin legalitas usaha dan operasional.',
     badge: 'Terdaftar Resmi',
     imgLabel: 'Scan / Foto Dokumen NIB (400×280 px)',
+    src: './nib.jpg'
   },
   {
     icon: '🛡️',
@@ -33,6 +34,7 @@ const legalities = [
     desc: 'Merek dan formula BogFeed dilindungi oleh Hak Kekayaan Intelektual, menjamin keaslian dan inovasi produk.',
     badge: 'Terlindungi',
     imgLabel: 'Scan / Foto Sertifikat HAKI (400×280 px)',
+    src: './haki.jpg'
   },
 ]
 
@@ -263,9 +265,10 @@ export default function TentangKami() {
                 <div className="legality-doc">
                   <ImagePlaceholder
                     width="100%"
-                    height="220px"
+                    height="480px"
                     label={item.imgLabel}
                     radius="var(--radius-md)"
+                    imgsrc={item.src}
                   />
                 </div>
               </div>

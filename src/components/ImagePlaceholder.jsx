@@ -16,6 +16,7 @@ export default function ImagePlaceholder({
   height = '300px',
   label = 'Tambahkan Gambar',
   radius = 'var(--radius-md)',
+  imgsrc = './logo.png',
   style = {},
 }) {
   return (
@@ -29,9 +30,10 @@ export default function ImagePlaceholder({
         ...style,
       }}
     >
-      <span className="img-icon">🌿</span>
+      <span className="img-icon">🌿</span> 
+      {imgsrc != './logo.png' ? <img src = {imgsrc} ksd={imgsrc} alt={label}/>:''}
       <span className="img-label">
-        {label}
+        {label} {imgsrc}
         <br />
         <span style={{ opacity: 0.7, fontSize: '0.7rem' }}>
           {width} × {height}
