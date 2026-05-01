@@ -30,15 +30,15 @@ export default function ImagePlaceholder({
         ...style,
       }}
     >
-      <span className="img-icon">🌿</span> 
-      {imgsrc != './logo.png' ? <img src = {imgsrc} ksd={imgsrc} alt={label}/>:''}
-      <span className="img-label">
+      {imgsrc != './logo.png' ? '':<span className="img-icon">🌿</span> }
+      {imgsrc != './logo.png' ? <img src = {imgsrc} alt={label}/>:''}
+      {imgsrc != './logo.png' ? '':<span className="img-label">
         {label} {imgsrc}
         <br />
         <span style={{ opacity: 0.7, fontSize: '0.7rem' }}>
           {width} × {height}
         </span>
-      </span>
+      </span>}
     </div>
   )
 }

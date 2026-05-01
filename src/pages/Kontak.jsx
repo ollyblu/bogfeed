@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useScrollReveal } from '../hooks/useScrollReveal'
-// import './Kontak.css'
+import './Kontak.css'
 
 const contactInfo = [
   {
@@ -9,9 +9,9 @@ const contactInfo = [
         <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.44 2.18 2 2 0 012.43 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l1.27-.87a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
       </svg>
     ),
-    label: 'WhatsApp / Telepon',
-    value: '+62 8XX-XXXX-XXXX', // GANTI dengan nomor WA
-    link: 'https://wa.me/628XXXXXXXXXX', // GANTI dengan nomor WA
+    label: 'WhatsApp',
+    value: '+62 858-6510-2452', // GANTI dengan nomor WA
+    link: 'https://wa.me/6285865102452', // GANTI dengan nomor WA
     linkLabel: 'Chat via WhatsApp',
   },
   {
@@ -22,8 +22,8 @@ const contactInfo = [
       </svg>
     ),
     label: 'Email',
-    value: 'info@bogfeed.id', // GANTI dengan email Anda
-    link: 'mailto:info@bogfeed.id',
+    value: 'bogfeed.id@gmail.com', // GANTI dengan email Anda
+    link: 'mailto:bogfeed.id@gmail.com',
     linkLabel: 'Kirim Email',
   },
   {
@@ -34,8 +34,8 @@ const contactInfo = [
       </svg>
     ),
     label: 'Lokasi',
-    value: 'Ponorogo, Jawa Timur, Indonesia', // GANTI dengan alamat lengkap
-    link: 'https://maps.google.com/?q=Ponorogo',
+    value: 'Bantul, Yogyakarta, Indonesia', // GANTI dengan alamat lengkap
+    link: 'https://maps.google.com/?q=Bantul',
     linkLabel: 'Lihat di Maps',
   },
   {
@@ -54,7 +54,7 @@ const contactInfo = [
 
 const faqs = [
   {
-    q: 'Apakah BogFeed bisa dikirim ke luar Jawa Timur?',
+    q: 'Apakah BogFeed bisa dikirim ke luar Jawa?',
     a: 'Ya, kami melayani pengiriman ke seluruh Indonesia. Biaya ongkos kirim disesuaikan dengan lokasi tujuan. Hubungi kami untuk informasi lebih lanjut.',
   },
   {
@@ -244,7 +244,7 @@ export default function Kontak() {
                       <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
                     </button>
                     <a
-                      href={`https://wa.me/628XXXXXXXXXX?text=${waMessage}`}
+                      href={`https://wa.me/6285865102452?text=${waMessage}`}
                       className="btn btn-outline wa-btn"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -308,7 +308,7 @@ export default function Kontak() {
                   <p>Respons lebih cepat via WhatsApp</p>
                 </div>
                 <a
-                  href="https://wa.me/628XXXXXXXXXX"
+                  href="https://wa.me/6285865102452"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary"
@@ -360,7 +360,7 @@ export default function Kontak() {
           <div className="faq-list">
             {faqs.map((faq, i) => (
               <div
-                className={`faq-item reveal delay-${(i % 3) + 1} ${openFaq === i ? 'open' : ''}`}
+                className={`faq-item ${openFaq === i ? 'open' : ''}`}
                 key={i}
               >
                 <button className="faq-question" onClick={() => toggleFaq(i)}>

@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import ImagePlaceholder from '../components/ImagePlaceholder'
 import './Home.css'
+import FeedCalculator from '../components/FeedCalculator'
+
 
 const features = [
   {
@@ -146,6 +148,7 @@ export default function Home() {
                   height="480px"
                   label="Foto Produk / Suasana Peternakan Utama"
                   radius="var(--radius-xl)"
+                  imgsrc='./produk/banyak.jpg'
                 />
                 {/* FLOATING CARD */}
                 <div className="float-card float-card-1">
@@ -233,6 +236,7 @@ export default function Home() {
                   height="340px"
                   label="Foto Proses Produksi / Bahan Baku"
                   radius="var(--radius-lg)"
+                  imgsrc='./produk/makan.jpg'
                 />
                 <div className="about-img-small">
                   <ImagePlaceholder
@@ -240,6 +244,7 @@ export default function Home() {
                     height="160px"
                     label="Gedebok Pisang (160×160)"
                     radius="var(--radius-md)"
+                    imgsrc='./produk/reka1.jpg'
                   />
                 </div>
               </div>
@@ -302,6 +307,7 @@ export default function Home() {
                   height="200px"
                   label={`Foto Kemasan ${p.size}`}
                   radius="var(--radius-md)"
+                  imgsrc='./produk/produk5kg.jpg'
                 />
                 <div className="product-card-content">
                   <h3>BogFeed <span>{p.size}</span></h3>
@@ -321,7 +327,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      
+      <FeedCalculator/>
+          
       {/* ===================== EDUKASI PREVIEW ===================== */}
       <section className="section edu-preview bg-cream">
         <div className="container">

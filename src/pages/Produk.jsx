@@ -108,6 +108,7 @@ export default function Produk() {
               height="260px"
               label="Banner Foto Semua Produk BogFeed (1000×260 px)"
               radius="var(--radius-xl)"
+              imgsrc='./produk/waduh.jpg'
             />
           </div>
         </div>
@@ -140,6 +141,7 @@ export default function Produk() {
                     height="340px"
                     label={`Foto Kemasan ${product.size} (380×380 px)`}
                     radius="var(--radius-lg)"
+                    imgsrc='./produk/produk5kg.jpg'
                   />
                   {product.badge && (
                     <span className="product-badge">{product.badge}</span>
@@ -170,7 +172,7 @@ export default function Produk() {
                       <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </Link>
                     <a
-                      href="https://wa.me/628XXXXXXXXXX"
+                      href="https://wa.me/6285865102452"
                       className="btn btn-outline"
                       target="_blank"
                       rel="noopener noreferrer"

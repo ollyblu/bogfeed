@@ -46,10 +46,10 @@ const values = [
 ]
 
 const timeline = [
-  { year: '2023', title: 'Riset & Pengembangan', desc: 'Memulai penelitian formulasi pakan berbasis Gedebok pisang sebagai alternatif pakan domba.' },
-  { year: '2024', title: 'Uji Coba Produk', desc: 'Uji coba formula di peternakan mitra, validasi nutrisi dan efek pada kualitas daging domba.' },
-  { year: '2025', title: 'Legalitas & Produksi', desc: 'Pendaftaran NIB & HAKI, memulai produksi skala komersial dengan standar kualitas ketat.' },
-  { year: '2026', title: 'Ekspansi Pasar', desc: 'Memperluas jangkauan ke peternak domba di seluruh Jawa Timur dan Indonesia.' },
+  { year: '1', title: 'Riset & Pengembangan', desc: 'Memulai penelitian formulasi pakan berbasis Gedebok pisang sebagai alternatif pakan domba.' },
+  { year: '2', title: 'Uji Coba Produk', desc: 'Uji coba formula di peternakan mitra, validasi nutrisi dan efek pada kualitas daging domba.' },
+  { year: '3', title: 'Legalitas & Produksi', desc: 'Pendaftaran NIB & HAKI, memulai produksi skala komersial dengan standar kualitas ketat.' },
+  { year: '4', title: 'Ekspansi Pasar', desc: 'Memperluas jangkauan ke peternak domba di seluruh Jawa Timur dan Indonesia.' },
 ]
 
 export default function TentangKami() {
@@ -220,7 +220,7 @@ export default function TentangKami() {
         <div className="container">
           <div className="section-header reveal">
             <span className="badge badge-olive">Perjalanan Kami</span>
-            <h2>Timeline BogFeed</h2>
+            <h2>Runtutan Kegiatan BogFeed</h2>
             <div className="divider divider-center" />
           </div>
           <div className="timeline">
