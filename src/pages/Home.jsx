@@ -30,10 +30,10 @@ const features = [
 ]
 
 const products = [
-  { size: '1 kg', desc: 'Ideal untuk uji coba & peternak kecil', highlight: false },
-  { size: '5 kg', desc: 'Pilihan ekonomis untuk kebutuhan mingguan', highlight: true },
-  { size: '10 kg', desc: 'Efisien untuk peternakan skala menengah', highlight: false },
-  { size: '15 kg', desc: 'Paling hemat untuk peternak profesional', highlight: false },
+  { size: '1 kg', desc: 'Ideal untuk uji coba & peternak kecil', highlight: false, imgsrc:'./produk/produk1kgoke.jpg' },
+  { size: '5 kg', desc: 'Pilihan ekonomis untuk kebutuhan mingguan', highlight: true, imgsrc:'./produk/produk5kgoke.jpg' },
+  { size: '10 kg', desc: 'Efisien untuk peternakan skala menengah', highlight: false, imgsrc:'./produk/produk10kgoke.jpg' },
+  { size: '15 kg', desc: 'Paling hemat untuk peternak profesional', highlight: false, imgsrc:'./produk/produk15kgoke.jpg' },
 ]
 
 const eduCards = [
@@ -103,54 +103,34 @@ export default function Home() {
         <div className="container">
           <div className="hero-grid">
             <div className="hero-content">
-              <span className="badge badge-green hero-badge">🌿 Complete Feed Premium</span>
+              {/* <span className="hero-subtitle">FROM PRAYAGRAJ KITCHENS SINCE 2014</span> */}
+              <span className="badge hero-badge">🌿 Complete Feed Premium</span>
               <h1 className="hero-title">
                 Solusi untuk<br />
-                <em>Daging Domba</em><br />
-                yang Berkualitas
+                <em>Daging Domba</em> yang Berkualitas
               </h1>
-              <p className="hero-desc">
-                BogFeed adalah complete feed berbasis limbah Gedebok pisang yang dirancang praktis, siap pakai, dan kaya nutrisi — memenuhi kebutuhan harian ternak sekaligus mendukung peningkatan kualitas daging domba Anda.
-              </p>
               <div className="hero-actions">
-                <Link to="/produk" className="btn btn-primary">
+                <Link to="/produk" className="btn-order">
                   Lihat Produk
                   <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </Link>
-                <Link to="/edukasi" className="btn btn-outline">
+                <Link to="/edukasi" className="btn-view">
                   Pelajari Lebih Lanjut
                 </Link>
               </div>
-              <div className="hero-trust">
-                <div className="trust-item">
-                  <span className="trust-icon">✅</span>
-                  <span>NIB & HAKI Terdaftar</span>
-                </div>
-                <div className="trust-item">
-                  <span className="trust-icon">🌱</span>
-                  <span>Ramah Lingkungan</span>
-                </div>
-                <div className="trust-item">
-                  <span className="trust-icon">📦</span>
-                  <span>Siap Kirim</span>
-                </div>
-              </div>
             </div>
+
             <div className="hero-visual">
-              {/* ================================================================
-                  GANTI: Foto produk utama BogFeed (kemasan / suasana peternakan)
-                  Ukuran ideal: 600x650 px, format WebP/JPG
-                  Contoh: <img src="/images/hero-product.jpg" alt="BogFeed Produk" />
-                  ================================================================ */}
               <div className="hero-img-wrapper">
-                <ImagePlaceholder
-                  width="100%"
-                  height="480px"
-                  label="Foto Produk / Suasana Peternakan Utama"
-                  radius="var(--radius-xl)"
-                  imgsrc='./produk/banyak.jpg'
+                {/* Gambar Produk Utama */}
+                <img
+                  src="./produk/hero.png"
+                  alt="Nandi Chakki Fresh Atta"
+                  className="main-product-img"
+
                 />
-                {/* FLOATING CARD */}
+
+                {/* Floating Badge (Kanan Bawah seperti di gambar) */}
                 <div className="float-card float-card-1">
                   <span className="float-icon">🏆</span>
                   <div>
@@ -258,19 +238,19 @@ export default function Home() {
               </p>
               <ul className="check-list">
                 <li>
-                  <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
                   Daya simpan panjang & kualitas nutrisi stabil
                 </li>
                 <li>
-                  <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
                   Menurunkan biaya pakan tanpa mengorbankan kualitas
                 </li>
                 <li>
-                  <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
                   Mendukung pertumbuhan & kualitas daging domba
                 </li>
                 <li>
-                  <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" /></svg>
                   Legalitas NIB & HAKI terdaftar resmi
                 </li>
               </ul>
@@ -307,7 +287,7 @@ export default function Home() {
                   height="200px"
                   label={`Foto Kemasan ${p.size}`}
                   radius="var(--radius-md)"
-                  imgsrc='./produk/produk5kg.jpg'
+                  imgsrc={p.imgsrc}
                 />
                 <div className="product-card-content">
                   <h3>BogFeed <span>{p.size}</span></h3>
@@ -322,14 +302,13 @@ export default function Home() {
           <div style={{ textAlign: 'center', marginTop: 48 }} className="reveal">
             <Link to="/produk" className="btn btn-outline">
               Lihat Semua Produk
-              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </Link>
           </div>
         </div>
       </section>
-      
-      <FeedCalculator/>
-          
+
+
       {/* ===================== EDUKASI PREVIEW ===================== */}
       <section className="section edu-preview bg-cream">
         <div className="container">
@@ -351,7 +330,7 @@ export default function Home() {
                 <p>{card.desc}</p>
                 <span className="edu-cta">
                   Baca selengkapnya
-                  <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
                 </span>
               </Link>
             ))}

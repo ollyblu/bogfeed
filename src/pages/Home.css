@@ -5,7 +5,12 @@
 /* ===== HERO ===== */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(145deg, var(--cream) 0%, var(--white) 60%, rgba(197, 208, 160, 0.2) 100%);
+  /* background: linear-gradient(145deg, var(--cream) 0%, var(--white) 60%, rgba(197, 208, 160, 0.2) 100%); */
+  background-image: url('/ternak/suasana.jpg');
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-blend-mode: darken;
+  backdrop-filter: blur(20px);
   display: flex;
   align-items: center;
   padding: 120px 0 80px;
@@ -81,19 +86,23 @@
 .hero-badge {
   margin-bottom: 24px;
   font-size: 0.82rem;
+  background-color: #6a6e5a8c;
+  /* background: var(--green-light); */
+  color: #b1be9b;
+  /* background: var(--font-display); */
 }
 
 .hero-title {
   font-size: clamp(2.6rem, 5.5vw, 5rem);
   font-weight: 700;
   line-height: 1.1;
-  color: var(--text-dark);
+  color: #ffffffdb;
   margin-bottom: 24px;
 }
 
 .hero-title em {
   font-style: italic;
-  color: var(--green-dark);
+  color: #ccd7ba;
   position: relative;
 }
 
@@ -138,12 +147,15 @@
   font-weight: 500;
   color: var(--text-muted);
 }
-
 .trust-icon { font-size: 1rem; }
 
 /* HERO VISUAL */
 .hero-visual {
   animation: heroVisual 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+  flex: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes heroVisual {
@@ -153,6 +165,7 @@
 
 .hero-img-wrapper {
   position: relative;
+  animation: floatCard1 5s ease-in-out infinite;
 }
 
 /* FLOATING CARDS */
@@ -168,6 +181,8 @@
   border: 1px solid rgba(197, 208, 160, 0.4);
   z-index: 10;
 }
+
+
 
 .float-card-1 {
   bottom: 32px;
@@ -662,4 +677,119 @@
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .edu-grid { grid-template-columns: 1fr; }
   .float-card-1, .float-card-2 { display: none; }
+}
+
+
+/* Penyesuaian Hero Content */
+.hero-subtitle {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: #d1d5db; /* Abu-abu terang */
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #f3f4f6;
+  margin-bottom: 0.5rem;
+}
+
+.hero-stats-text {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin-bottom: 2rem;
+}
+
+/* Tombol Kustom */
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-order {
+  
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 100px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: var(--transition);
+  cursor: pointer;
+
+  background-color: #aac57fd2; /* Merah maroon */
+  color: white;
+}
+
+.btn-view {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 100px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: var(--transition);
+  cursor: pointer;
+
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--green-dark);
+
+  background-color: transparent;
+  padding: 12px 24px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-order:hover { background-color: #4f5d39ee; }
+.btn-view:hover { background-color: rgba(255, 255, 255, 0.1); }
+
+/* Visual & Gambar */
+.main-product-img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+}
+
+.floating-badge-rank {
+  position: absolute;
+  bottom: 20px;
+  background-color: #d9b87a; /* Warna gold/cream */
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.star-icon { color: #333; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-visual {
+    margin-top: 3rem;
+  }
+  .floating-badge-rank {
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -10px;
+    white-space: nowrap;
+  }
 }

@@ -7,6 +7,7 @@ import Produk from './pages/Produk'
 import Edukasi from './pages/Edukasi'
 import TentangKami from './pages/TentangKami'
 import Kontak from './pages/Kontak'
+import Calculator from './pages/Calculator'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -28,6 +29,8 @@ export default function App() {
           <Route path="/edukasi" element={<Edukasi />} />
           <Route path="/tentang-kami" element={<TentangKami />} />
           <Route path="/kontak" element={<Kontak />} />
+          <Route path="/hitung" element={<Calculator />} />
+          
         </Routes>
       </main>
       <Footer />

@@ -8,6 +8,7 @@ const navLinks = [
   { to: '/edukasi', label: 'Edukasi' },
   { to: '/tentang-kami', label: 'Tentang Kami' },
   { to: '/kontak', label: 'Kontak' },
+  { to: '/hitung', label: 'Kalkulator'}
 ]
 
 export default function Navbar() {

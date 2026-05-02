@@ -8,6 +8,7 @@ const products = [
   {
     id: 1,
     size: '1 kg',
+    imgsrc: './produk/produk1kgoke.jpg',
     name: 'BogFeed 1 kg',
     tagline: 'Starter Pack untuk Peternak Baru',
     desc: 'Pakan Domba yang diformulasikan untuk pertumbuhan ternak penggemukan (fattening). Ideal untuk uji coba atau peternak dengan satu hingga dua ekor domba.',
@@ -23,6 +24,7 @@ const products = [
   {
     id: 2,
     size: '5 kg',
+    imgsrc: './produk/produk5kgoke.jpg',
     name: 'BogFeed 5 kg',
     tagline: 'Pilihan Ekonomis & Praktis',
     desc: 'Pakan Domba yang diformulasikan untuk pertumbuhan ternak penggemukan (fattening). Cocok untuk kebutuhan mingguan dengan beberapa ekor domba.',
@@ -38,6 +40,7 @@ const products = [
   {
     id: 3,
     size: '10 kg',
+    imgsrc: './produk/produk10kgoke.jpg',
     name: 'BogFeed 10 kg',
     tagline: 'Untuk Peternakan Skala Menengah',
     desc: 'Pakan Domba yang diformulasikan untuk pertumbuhan ternak penggemukan (fattening). Efisien untuk peternakan dengan 5–10 ekor domba.',
@@ -53,6 +56,7 @@ const products = [
   {
     id: 4,
     size: '15 kg',
+    imgsrc: './produk/produk15kgoke.jpg',
     name: 'BogFeed 15 kg',
     tagline: 'Nilai Terbaik untuk Peternak Profesional',
     desc: 'Pakan Domba yang diformulasikan untuk pertumbuhan ternak penggemukan (fattening). Kemasan terbesar dengan nilai paling ekonomis untuk peternakan skala besar.',
@@ -141,7 +145,7 @@ export default function Produk() {
                     height="340px"
                     label={`Foto Kemasan ${product.size} (380×380 px)`}
                     radius="var(--radius-lg)"
-                    imgsrc='./produk/produk5kg.jpg'
+                    imgsrc={product.imgsrc}
                   />
                   {product.badge && (
                     <span className="product-badge">{product.badge}</span>
