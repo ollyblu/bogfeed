@@ -14,6 +14,7 @@ const products = [
     desc: 'Pakan Domba yang diformulasikan untuk pertumbuhan ternak penggemukan (fattening). Ideal untuk uji coba atau peternak dengan satu hingga dua ekor domba.',
     specs: [
       { label: 'Netto', value: '1 kg' },
+      { label: 'Harga', value: 'Rp5.000'},
       { label: 'Jenis', value: 'Complete Feed' },
       { label: 'Fungsi', value: 'Fattening / Penggemukan' },
       { label: 'Bahan Utama', value: 'Gedebok Pisang' },
@@ -30,6 +31,7 @@ const products = [
     desc: 'Pakan Domba yang diformulasikan untuk pertumbuhan ternak penggemukan (fattening). Cocok untuk kebutuhan mingguan dengan beberapa ekor domba.',
     specs: [
       { label: 'Netto', value: '5 kg' },
+      { label: 'Harga', value: 'Rp25.000'},
       { label: 'Jenis', value: 'Complete Feed' },
       { label: 'Fungsi', value: 'Fattening / Penggemukan' },
       { label: 'Bahan Utama', value: 'Gedebok Pisang' },
@@ -46,6 +48,7 @@ const products = [
     desc: 'Pakan Domba yang diformulasikan untuk pertumbuhan ternak penggemukan (fattening). Efisien untuk peternakan dengan 5–10 ekor domba.',
     specs: [
       { label: 'Netto', value: '10 kg' },
+      { label: 'Harga', value: 'Rp45.000'},
       { label: 'Jenis', value: 'Complete Feed' },
       { label: 'Fungsi', value: 'Fattening / Penggemukan' },
       { label: 'Bahan Utama', value: 'Gedebok Pisang' },
@@ -62,6 +65,7 @@ const products = [
     desc: 'Pakan Domba yang diformulasikan untuk pertumbuhan ternak penggemukan (fattening). Kemasan terbesar dengan nilai paling ekonomis untuk peternakan skala besar.',
     specs: [
       { label: 'Netto', value: '15 kg' },
+      { label: 'Harga', value: 'Rp67.000'},
       { label: 'Jenis', value: 'Complete Feed' },
       { label: 'Fungsi', value: 'Fattening / Penggemukan' },
       { label: 'Bahan Utama', value: 'Gedebok Pisang' },
