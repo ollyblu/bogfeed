@@ -10,6 +10,7 @@ const topics = [
     icon: '🏡',
     title: 'Syarat Kandang yang Baik',
     short: 'Ketahui spesifikasi kandang ideal untuk hasil ternak optimal',
+    imgsrc: './ternak/kandangbaik.jpg',
     content: [
       {
         type: 'text',
@@ -45,6 +46,7 @@ const topics = [
     icon: '🧴',
     title: 'Perawatan Rutin Domba',
     short: 'Panduan perawatan harian untuk menjaga kesehatan ternak',
+    imgsrc: './ternak/perawatan.jpg',
     content: [
       {
         type: 'list',
@@ -64,6 +66,7 @@ const topics = [
     icon: '✅',
     title: 'Ciri Domba Sehat',
     short: 'Kenali tanda-tanda ternak domba yang sehat',
+    imgsrc: './ternak/dombasehat.jpg',
     content: [
       {
         type: 'list',
@@ -88,6 +91,7 @@ const topics = [
     icon: '⚠️',
     title: 'Ciri Domba Sakit',
     short: 'Identifikasi tanda-tanda domba yang perlu segera ditangani',
+    imgsrc: './ternak/dombasakit.jpg',
     content: [
       {
         type: 'list',
@@ -113,6 +117,7 @@ const topics = [
     icon: '💉',
     title: 'Pencegahan & Pengobatan Penyakit',
     short: 'Langkah preventif dan penanganan penyakit pada domba',
+    imgsrc: './ternak/pengobatan.jpg',
     content: [
       {
         type: 'list',
@@ -144,6 +149,7 @@ const topics = [
     icon: '♻️',
     title: 'Cara Membuat Kompos',
     short: 'Manfaatkan kotoran domba menjadi pupuk berkualitas',
+    imgsrc: './ternak/kompos.jpg',
     content: [
       {
         type: 'list',
@@ -259,6 +265,7 @@ export default function Edukasi() {
                   height="280px"
                   label={activeTopic.imgLabel}
                   radius="var(--radius-lg)"
+                  imgsrc={activeTopic.imgsrc}
                 />
               </div>
 

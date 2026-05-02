@@ -49,7 +49,7 @@ const timeline = [
   { year: '1', title: 'Riset & Pengembangan', desc: 'Memulai penelitian formulasi pakan berbasis Gedebok pisang sebagai alternatif pakan domba.' },
   { year: '2', title: 'Uji Coba Produk', desc: 'Uji coba formula di peternakan mitra, validasi nutrisi dan efek pada kualitas daging domba.' },
   { year: '3', title: 'Legalitas & Produksi', desc: 'Pendaftaran NIB & HAKI, memulai produksi skala komersial dengan standar kualitas ketat.' },
-  { year: '4', title: 'Ekspansi Pasar', desc: 'Memperluas jangkauan ke peternak domba di seluruh Jawa Timur dan Indonesia.' },
+  { year: '4', title: 'Ekspansi Pasar', desc: 'Memperluas jangkauan ke peternak domba di seluruh Yogyakarta dan Indonesia.' },
 ]
 
 export default function TentangKami() {
@@ -87,6 +87,7 @@ export default function TentangKami() {
                   height="380px"
                   label="Foto Tim / Suasana Produksi BogFeed (800×380 px)"
                   radius="var(--radius-xl)"
+                  imgsrc='./ternak/kandangbaik.jpg'
                 />
               </div>
               <div className="hero-img-side">
@@ -95,12 +96,14 @@ export default function TentangKami() {
                   height="180px"
                   label="Foto Produk (400×180 px)"
                   radius="var(--radius-lg)"
+                  imgsrc='./produk/waduh.jpg'
                 />
                 <ImagePlaceholder
                   width="100%"
                   height="180px"
                   label="Foto Bahan Baku (400×180 px)"
                   radius="var(--radius-lg)"
+                  imgsrc='./produk/makan.jpg'
                 />
               </div>
             </div>
@@ -122,6 +125,7 @@ export default function TentangKami() {
                 height="400px"
                 label="Foto Gedebok Pisang / Bahan Baku Lokal (520×440 px)"
                 radius="var(--radius-xl)"
+                imgsrc='./produk/bahanbaku.jpg'
               />
             </div>
             <div className="latar-content reveal-right">
